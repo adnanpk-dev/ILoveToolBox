@@ -46,6 +46,8 @@ export default function BlogView() {
         {blog.title}
       </h1>
 
+      <p className="mt-6 text-lg">{blog.description}</p>
+
       {/* Blog Content (Dynamic Sections) */}
       <div className="mt-6 space-y-6 text-gray-700 leading-relaxed">
         {blog.sections?.map((section, index) => (

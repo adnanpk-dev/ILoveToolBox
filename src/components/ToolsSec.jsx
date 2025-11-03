@@ -1,3 +1,4 @@
+import BlogFilters from "./BlogFilters";
 import ToolCard from "./ToolCard";
 
 export default function ToolsSec() {
@@ -40,8 +41,13 @@ export default function ToolsSec() {
     },
   ];
 
+  const categories = [];
+
   return (
+    <>
+    
     <section className="max-w-7xl mx-auto px-6 py-16">
+      
       <h1 className="text-3xl font-bold text-gray-900 text-center">
         Explore All Tools
       </h1>
@@ -49,11 +55,16 @@ export default function ToolsSec() {
         Work smarter with powerful tools for design, editing, and productivity.
       </p>
 
+      <BlogFilters placeholder="Search Tools..." categories={categories} />
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         {tools.map((tool, index) => (
           <ToolCard key={index} {...tool} />
         ))}
       </div>
     </section>
+    </>
+    
+    
   );
 }

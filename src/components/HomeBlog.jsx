@@ -1,33 +1,12 @@
 import { Link } from "react-router-dom";
 import BlogCard from "./BlogCard";
+import blogs from "../blogs/blogs";
+
 
 export default function HomeBlog() {
-  const blogs = [
-    {
-      image: "https://lh5.googleusercontent.com/NJ7F7DD3MZn7lKqx0z9PEfktyjLj4DG1LyUVry_uJ7wZw4AOQAFmv6shKwF6LnxbAZirlLr5ZVuUhgmXi8zh0YvFx0JnSJ52Wv2CONib6197G3qw029CEautW4bOmQymXHTwmKEzlg14XgMWefAW52s",
-      title: "How to Build a Web Tool in 2025",
-      description: "Learn how to create web tools using React, Tailwind & more...",
-      slug: "build-web-tool",
-      category: "Web",
-      date: "2/11/2025"
-    },
-    {
-      image: "https://lh5.googleusercontent.com/NJ7F7DD3MZn7lKqx0z9PEfktyjLj4DG1LyUVry_uJ7wZw4AOQAFmv6shKwF6LnxbAZirlLr5ZVuUhgmXi8zh0YvFx0JnSJ52Wv2CONib6197G3qw029CEautW4bOmQymXHTwmKEzlg14XgMWefAW52s",
-      title: "Top 10 Tools for Developers",
-      description: "The most powerful tools every developer must use...",
-      slug: "top-10-dev-tools",
-      category: "Web",
-      date: "2/11/2025"
-    },
-    {
-      image: "https://lh5.googleusercontent.com/NJ7F7DD3MZn7lKqx0z9PEfktyjLj4DG1LyUVry_uJ7wZw4AOQAFmv6shKwF6LnxbAZirlLr5ZVuUhgmXi8zh0YvFx0JnSJ52Wv2CONib6197G3qw029CEautW4bOmQymXHTwmKEzlg14XgMWefAW52s",
-      title: "Monetize Your Tools with AdSense",
-      description: "Turn your side projects into profitable products...",
-      slug: "monetize-tools-adsense",
-      category: "Web",
-      date: "2/11/2025"
-    }
-  ];
+
+  const blog = blogs.slice(-3);
+
 
   return (
     <>
@@ -43,7 +22,7 @@ export default function HomeBlog() {
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-            {blogs.map((blog, index) => (
+            {blog.map((blog, index) => (
               <BlogCard key={index} {...blog} />
             ))}
           </div>
