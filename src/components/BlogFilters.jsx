@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 
-export default function BlogFilters({ placeholder, categories }) {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+export default function BlogFilters({ placeholder, categories,selectedCategory,setSelectedCategory,searchValue,setSearchValue }) {
+  
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 mt-10 mb-10 space-y-6 
@@ -13,6 +13,8 @@ export default function BlogFilters({ placeholder, categories }) {
         <input
           type="text"
           placeholder={placeholder}
+          value={searchValue}
+          onChange={(e)=>setSearchValue(e.target.value)}
           className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm 
           focus:ring-2 focus:ring-indigo-500 outline-none"
         />

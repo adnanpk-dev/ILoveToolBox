@@ -1,53 +1,37 @@
+import { useEffect, useState } from "react";
+import tools from "../tools/tools";
 import BlogFilters from "./BlogFilters";
 import ToolCard from "./ToolCard";
 
 export default function ToolsSec() {
-  const tools = [
-    {
-      title: "UI Component Builder",
-      description: "Create UI components visually and export HTML, Tailwind & React.",
-      icon: "🧩",
-      link: "/tools/ui-builder"
-    },
-    {
-      title: "Image Editor",
-      description: "Crop, resize and enhance images instantly online.",
-      icon: "🖼️",
-      link: "/tools/image-editor"
-    },
-    {
-      title: "Video Converter",
-      description: "Convert videos to different formats quickly and easily.",
-      icon: "🎥",
-      link: "/tools/video-converter"
-    },
-    {
-      title: "Roadmap Generator",
-      description: "Plan your ideas and build roadmaps with a single click.",
-      icon: "🗺️",
-      link: "/tools/roadmap-generator"
-    },
-    {
-      title: "PDF Tools",
-      description: "Merge, split, compress & edit documents — all online.",
-      icon: "📄",
-      link: "/tools/pdf-tools"
-    },
-    {
-      title: "Color Picker",
-      description: "Pick perfect colors with advanced palette controls.",
-      icon: "🎨",
-      link: "/tools/color-picker"
-    },
-  ];
+
+  const [searchValue, setSearchValue] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [filteredTools, setFilteredTools] = useState(tools);
 
   const categories = [];
 
+  useEffect(() => {
+    let filtered = tools;
+
+    // ✅ Search Filter
+    if (searchValue.trim()) {
+      filtered = filtered.filter(tool =>
+        tool.title.toLowerCase().includes(searchValue.toLowerCase()) || tool.description.toLowerCase().includes(searchValue.toLowerCase())
+      );
+    }
+
+    // ✅ Category Filter
+    if (selectedCategory !== "All") {
+      filtered = filtered.filter(tool => tool.category === selectedCategory);
+    }
+
+    setFilteredTools(filtered);
+  }, [searchValue, selectedCategory]);
+
   return (
-    <>
-    
     <section className="max-w-7xl mx-auto px-6 py-16">
-      
+
       <h1 className="text-3xl font-bold text-gray-900 text-center">
         Explore All Tools
       </h1>
@@ -55,16 +39,27 @@ export default function ToolsSec() {
         Work smarter with powerful tools for design, editing, and productivity.
       </p>
 
-      <BlogFilters placeholder="Search Tools..." categories={categories} />
+      <BlogFilters
+        placeholder="Search Tools..."
+        categories={categories}
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-        {tools.map((tool, index) => (
-          <ToolCard key={index} {...tool} />
-        ))}
+        {filteredTools.length > 0 ? (
+          filteredTools.map((tool, index) => (
+            <ToolCard key={index} {...tool} />
+          ))
+        ) : (
+          <p className="text-gray-500 col-span-full text-center">
+            No tools found
+          </p>
+        )}
       </div>
+
     </section>
-    </>
-    
-    
   );
 }
