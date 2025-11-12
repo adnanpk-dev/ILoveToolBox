@@ -17,7 +17,7 @@ export default function ColorGradientPicker() {
         setNotification({
           message: "CSS Copied Successfully ✅",
           icon: "📋",
-          type: "error",
+          type: "success",
         });
       })
       .catch(() => {

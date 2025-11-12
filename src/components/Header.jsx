@@ -5,10 +5,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   const navItems = [
+    { label: "Home", href: "/" },
     { label: "Tools", href: "/tools" },
-    { label: "Blogs", href: "/blogs" },
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Terms & Conditions", href: "/terms&conditions" },
     { label: "About Us", href: "/about-us" },
     { label: "Contact Us", href: "/contact-us" }
     

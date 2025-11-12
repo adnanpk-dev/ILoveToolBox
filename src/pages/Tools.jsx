@@ -1,4 +1,4 @@
-import Footer from "../components/Footer"
+
 import ToolsSec from "../components/ToolsSec"
 
 
@@ -10,7 +10,6 @@ function Tools() {
     <>
     <ToolsSec />
     
-    <Footer />
     </>
       
   )

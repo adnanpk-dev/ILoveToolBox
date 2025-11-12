@@ -6,7 +6,7 @@ import ToolCard from "./ToolCard";
 
 export default function HomeTools() {
 
-    const tool = tools.slice(-3);
+    const tool = tools.slice(-9);
 
 
     return (

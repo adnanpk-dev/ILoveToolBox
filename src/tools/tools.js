@@ -1,19 +1,20 @@
 
 
 const tools = [
-    {
-      title: "Color Picker",
-      description: "Pick perfect colors with advanced palette controls.",
-      icon: "🎨",
-      link: "/tool/color-picker",
-    },
-    {
-      title: "HTML To React",
-      description: "Convert HTML into clean React JSX instantly. Automatically fixes classes, closing tags, and attributes. Perfect for speeding up React development and migration.",
-      icon: "🎨",
-      link: "/tool/html-to-react",
-    }
-  ];
+  {
+    title: "Color Picker",
+    description: "Pick perfect colors with advanced palette controls.",
+    icon: "🎨",
+    link: "/tool/color-picker",
+  },
+  {
+    title: "Word Counter",
+    description: "Count words, characters, spaces & more instantly.",
+    icon: "📝",
+    link: "/tool/word-counter",
+  },
+
+];
 
 
-  export default tools;
+export default tools;
