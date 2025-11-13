@@ -2,13 +2,13 @@ export default function About() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold text-center mb-6 text-gray-900">
-        About <span className="text-indigo-600">MyTools</span>
+        About <span className="text-indigo-600">ILoveToolBox</span>
       </h1>
 
       <p className="text-gray-700 text-lg leading-relaxed text-center mb-10">
-        MyTools is an <span className="font-semibold">all-in-one web toolkit</span> built for
+        ILoveToolBox is an <span className="font-semibold">all-in-one web toolkit</span> built for
         developers, designers, and creators. You can convert, edit, optimize,
-        and generate content — all in one place. Whether you need a color tool, text analyzer, or converter, MyTools makes your
+        and generate content — all in one place. Whether you need a color tool, text analyzer, or converter, ILoveToolBox makes your
         workflow faster and easier.
       </p>
 
@@ -17,7 +17,7 @@ export default function About() {
           🌍 Open Source Mission
         </h2>
         <p className="text-gray-700">
-          MyTools is an <strong>open-source</strong> project created for the
+          ILoveToolBox is an <strong>open-source</strong> project created for the
           developer community. Our goal is to make everyday web tasks simple and
           accessible for everyone. You’re free to explore, use, and improve this
           project under open collaboration.
@@ -44,7 +44,7 @@ export default function About() {
 
       <div className="mt-12 text-center text-sm text-gray-500">
         <p>
-          © {new Date().getFullYear()} MyTools — Built with ❤️ by the Open Web
+          © {new Date().getFullYear()} ILoveToolBox — Built with ❤️ by the Open Web
           Community.
         </p>
       </div>

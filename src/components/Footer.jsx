@@ -8,7 +8,7 @@ const Footer = () => {
 
         {/* Brand Column */}
         <div>
-          <h2 className="text-2xl font-bold text-white">MyTools</h2>
+          <h2 className="text-2xl font-bold text-white">ILoveToolBox</h2>
           <p className="mt-3 text-gray-400 text-sm">
             Powerful tools for work, creativity, and productivity — all in one platform. Whether you’re designing graphics, converting files, planning projects, editing media, or building something new, everything you need is right here.
           </p>
@@ -38,7 +38,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="text-center mt-12 border-t border-gray-700 pt-6 text-sm">
-        © {new Date().getFullYear()} MyTools. All Rights Reserved.
+        © {new Date().getFullYear()} ILoveToolBox — Built by the open-source community 🌍
       </div>
     </footer>
   );

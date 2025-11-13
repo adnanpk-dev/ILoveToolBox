@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-16 text-center">
       <h1 className="text-3xl font-bold text-gray-900 mb-4">
-        Contact <span className="text-indigo-600">MyTools</span>
+        Contact <span className="text-indigo-600">ILoveToolBox</span>
       </h1>
 
       <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
@@ -76,7 +76,7 @@ export default function Contact() {
 
       <div className="mt-12 text-sm text-gray-500">
         <p>
-          © {new Date().getFullYear()} MyTools — Built by the open-source community 🌍
+        ILoveToolBox — Built by the open-source community 🌍
         </p>
       </div>
     </div>

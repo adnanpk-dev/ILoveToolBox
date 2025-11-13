@@ -19,7 +19,7 @@ export default function Header() {
           
           {/* Logo / Brand */}
           <Link to="/" className="flex items-center gap-2 font-bold text-xl">
-            <span className="text-indigo-600">MyTools</span>
+            <span className="text-indigo-600">ILoveToolBox</span>
           </Link>
 
           {/* Desktop Menu */}
