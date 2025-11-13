@@ -28,7 +28,7 @@ all built with **React + Vite + Tailwind CSS**.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ILoveToolBox.git
+git clone https://github.com/adnanpk-dev/ILoveToolBox.git
 
 # Go into the project folder
 cd ILoveToolBox
