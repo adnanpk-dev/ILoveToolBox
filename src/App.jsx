@@ -5,7 +5,7 @@ import Home from "./pages/Home"
 import Header from "./components/Header"
 import Tools from "./pages/Tools"
 import ColorPickerTool from "./AllTools/ColorPickerTool"
-import WordCounter from "./AllTools/toolsCompo/WordCounter";
+import WordCounter from "./AllTools/WordCounter";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";

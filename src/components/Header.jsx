@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
+import Logo from '../assets/ILoveToolBox-min.png'
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -9,17 +10,20 @@ export default function Header() {
     { label: "Tools", href: "/tools" },
     { label: "About Us", href: "/about-us" },
     { label: "Contact Us", href: "/contact-us" }
-    
   ];
 
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          
-          {/* Logo / Brand */}
-          <Link to="/" className="flex items-center gap-2 font-bold text-xl">
-            <span className="text-indigo-600">ILoveToolBox</span>
+
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
+            <img
+              src={Logo}   // <-- Put your PNG in public/logo.png
+              alt="ILoveToolBox Logo"
+              className="h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -64,14 +68,14 @@ export default function Header() {
         <div className="md:hidden bg-white border-t">
           <nav className="flex flex-col px-4 py-3 gap-3">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
+                to={item.href}
                 className="text-gray-700 hover:text-indigo-600 transition"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
