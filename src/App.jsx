@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ImageFilterTool from "./AllTools/ImageFilterTool";
+import AadsBanner from "./ads/AadsBanner";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         
         
       </Routes>
+      <AadsBanner />
       <Footer />
     </Router>
     
