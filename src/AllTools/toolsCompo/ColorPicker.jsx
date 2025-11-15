@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Copy } from "lucide-react";
-import Notification from "../components/Notification";
+import Notification from "../../components/Notification";
 
 export default function ColorGradientPicker() {
   const [mode, setMode] = useState("single");

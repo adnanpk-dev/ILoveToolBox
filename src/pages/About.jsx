@@ -33,7 +33,7 @@ export default function About() {
           new tools, or directly contribute code to our GitHub repository.
         </p>
         <a
-          href="https://github.com/yourusername/mytools"
+          href="https://github.com/adnanpk-dev/ILoveToolBox"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg shadow hover:bg-indigo-700 transition"

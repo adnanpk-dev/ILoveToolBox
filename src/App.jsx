@@ -9,6 +9,7 @@ import WordCounter from "./AllTools/WordCounter";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ImageFilterTool from "./AllTools/ImageFilterTool";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/contact-us" element={<Contact />}></Route>
         <Route path="/tool/color-picker" element={<ColorPickerTool />}></Route>
         <Route path="/tool/word-counter" element={<WordCounter />}></Route>
+        <Route path="/tool/css-filter" element={<ImageFilterTool />}></Route>
         
         
       </Routes>

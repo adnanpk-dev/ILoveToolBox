@@ -1,4 +1,4 @@
-import ColorPicker from "./ColorPicker";
+import ColorPicker from "./toolsCompo/ColorPicker";
 
 
 export default function ColorPickerTool() {
