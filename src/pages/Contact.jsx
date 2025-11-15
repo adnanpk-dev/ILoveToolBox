@@ -17,10 +17,10 @@ export default function Contact() {
         <Mail className="text-indigo-600 mb-3" size={28} />
         <h2 className="text-xl font-semibold text-gray-800 mb-2">Email Us</h2>
         <a
-          href="mailto:support@mytools.dev"
+          href="https://mail.google.com/"
           className="text-indigo-600 font-medium hover:underline"
         >
-          support@mytools.dev
+          buildweb022@gmail.com
         </a>
       </div>
 
@@ -32,14 +32,14 @@ export default function Contact() {
 
         <div className="flex justify-center flex-wrap gap-6 text-gray-700">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/adnanpk-dev/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-indigo-600 transition"
           >
             <Github size={22} /> <span>GitHub</span>
           </a>
-          <a
+          {/* <a
             href="https://linkedin.com/in/yourusername"
             target="_blank"
             rel="noopener noreferrer"
@@ -70,7 +70,7 @@ export default function Contact() {
             className="flex items-center gap-2 hover:text-indigo-600 transition"
           >
             <Instagram size={22} /> <span>Instagram</span>
-          </a>
+          </a> */}
         </div>
       </div>
 
